@@ -1,20 +1,168 @@
-#logoBar{
-  width: 30vw;
-  height: 100vh;
-}
-#siteLogo{
-  width: 100%;
-}
 body {
-  display: flex;
+  font-family: Arial, sans-serif;
+  margin: 10%;
+  margin-top: 5%;
+  padding: 10px;
+  line-height: 1.6;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
 }
-#staffGallery{
-  width: 70vw;
-  display: inherit;
 
+h1 {
+  font-size: 24px;
+  font-weight: bold;
 }
-.galleryImage{
+
+h2 {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+p {
+  font-size: 16px;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.info-item {
+  font-weight: bold;
+}
+
+.highlight {
+  color: red;
+  font-weight: bold;
+}
+
+.design-process {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.process-step {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #f8f8f8;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.box {
+  flex: 1;
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  grid-auto-rows: min-content;
+  gap: 0px; /* Space between images */
+  height: auto; /* Adjust as needed */
+  align-items: start;
+  margin-bottom: 0;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  height: auto;
+}
+
+.header {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.header-left {
+  grid-column: 1;
+}
+
+.header-right {
+  grid-column: 2;
+}
+
+.horizontal {
   width: 100%;
   height: auto;
-  height: 300px;
+  object-fit: cover; /* Ensures images don’t stretch */
+}
+
+.image-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center;
+}
+
+.vertical {
+  grid-row: span 2; /* Makes the vertical image span both rows */
+  width: 50%; /* Allow natural width */
+  height: 80%; /* Take full height */
+  object-fit: cover;
+  display: block;
+  margin: auto;
+}
+
+.responsive-img {
+  width: 100%; /* Images fill container */
+  max-width: 700px; /* Adjust max size */
+  height: 100%; /* Fix height to keep them uniform */
+  object-fit: cover; /* Ensures images maintain aspect ratio while filling space */
+}
+
+.responsive-vertical {
+  height: 500px; /* Images fill container */
+  width: 300px; /* Fix height to keep them uniform */
+  object-fit: cover;
+}
+
+/* Responsive tables */
+table {
+  width: 100%; /* Make tables full width */
+  border-collapse: collapse;
+  margin: 20px 0;
+  overflow-x: auto; /* Allow horizontal scrolling on small screens */
+  display: block;
+}
+
+th,
+td {
+  border: 1px solid #000;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f4f4f4;
 }

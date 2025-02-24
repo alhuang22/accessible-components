@@ -1,8 +1,7 @@
-  <!-- TO RUN IN BROWSER:
+<!-- TO RUN IN BROWSER:
     1. Install vscode extension Name: open in `browser open-in-browser` by TechER
     2. Right click html file and either run in default browser or another browser
   -->
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,23 +9,448 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML/CSS Studio</title>
     <!-- import CSS styles -->
-    <link rel="stylesheet" href="styles.css" /> 
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <!-- page content goes into <body> -->
   <body>
-    <div id="logoBar">
-      <h1>Welcome to 100 Acre Wood!</h1>
-      <img id="siteLogo" alt="Pooh-bear site logo" src="./assets/Header.png"/>
-      <h3>We're glad you're here :D</h3>
+    <div class="section">
+      <h1>Dropdown Component Case Study</h1>
+      <p>
+        This page contains a deep dive on the dropdown menu common in many
+        applications. We will take a look at dropdowns in three applications:
+        Arc Browser, qBittorrent, and Apple Music.
+      </p>
     </div>
-    <hr/>
-    <div id="staffGallery">
-      <img class="galleryImage" src="./assets/Eeyore-Eh.png"/>
-      <img class="galleryImage" src="./assets/Eeyore-Zz.png"/>
-      <img class="galleryImage" src="./assets/Kanga-Roo.png"/>
-      <img class="galleryImage" src="./assets/Owl-Phone.png"/>
-    </div>
-  </body>
 
+    <div class="section info-grid">
+      <div>
+        <p class="info-item">Author</p>
+        <p>
+          Alex Huang, <br />
+          Computer Science, <br />
+          Brown University
+        </p>
+      </div>
+      <div>
+        <p class="info-item">Project</p>
+        <p>CSCI1300 Accessible Components</p>
+      </div>
+      <div>
+        <p class="info-item">Timeline</p>
+        <p>2 weeks (2025)</p>
+      </div>
+      <div>
+        <p class="info-item">Tools Used</p>
+        <p>Figma, HTML, CSS</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Background</h2>
+      <p>
+        Most people who use computers have encountered the dropdown component.
+        It is commonly used to allow users to view a short list of options and
+        make a selection. Let's first take a quick look at how three
+        applications give their own spin on the component.
+      </p>
+    </div>
+
+    <h2>Arc Browser</h2>
+
+    <div class="container">
+      <div class="header header-left">Desktop</div>
+      <div class="header header-right">Mobile</div>
+      <img
+        id="browserImg1"
+        alt="browserImg1"
+        src="./assets/browserImg1.png"
+        class="horizontal"
+      />
+      <img
+        id="browserImageMobile"
+        alt="browserImageMobile"
+        src="./assets/browserImageMobile.png"
+        class="vertical"
+      />
+
+      <img
+        id="browserImg2"
+        alt="browserImg2"
+        src="./assets/browserImage2.png"
+        class="horizontal"
+      />
+    </div>
+
+    <h2>qBittorrent</h2>
+
+    <div class="container">
+      <img id="torrentImg1" src="./assets/torrentImg1.png" />
+      <img id="torrentImg2" src="./assets/torrentImg2.png" />
+    </div>
+
+    <div class="image-container">
+      <img id="AM1" src="./assets/AM1.png" class="responsive-img" />
+      <img id="AM2" src="./assets/AM2.png" class="responsive-img" />
+      <img id="AM3" src="./assets/AM3.png" class="responsive-img" />
+    </div>
+
+    <div class="section flex-container">
+      <div class="box">
+        <h2>Inputs</h2>
+        <p>
+          Components usually require user input, otherwise they are just static
+          items displayed on the screen. The dropdown menu's state can be
+          adjusted with a variety of inputs from the user. The table below
+          includes some observations I made when interacting with each
+          application's dropdowns.
+        </p>
+      </div>
+      <div class="box">
+        <h2>Which is most accessible?</h2>
+        <p>
+          The dropdown menu in qBittorrent feels the most accessible. It is
+          simple and contains the most visual cues to help users efficiently
+          navigate it. Users can become even more efficient by learning that
+          pressing the key of the beginning letter of the option will jump the
+          cursor to that option. My favorite part is the divider within the
+          component, it categorizes the many options without changing navigation
+          at all.
+        </p>
+      </div>
+    </div>
+    <table style="border-collapse: collapse; width: 100%">
+      <thead>
+        <tr>
+          <th style="border: 1px solid black; padding: 8px"></th>
+          <th style="border: 1px solid black; padding: 8px">Arc Browser</th>
+          <th style="border: 1px solid black; padding: 8px">qBittorrent</th>
+          <th style="border: 1px solid black; padding: 8px">Apple Music</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="border: 1px solid black; padding: 8px; font-weight: bold">
+            Mouse
+          </td>
+          <td style="border: 1px solid black; padding: 8px">
+            <ul>
+              <li>
+                Dropdown options are highlighted blue when mouse hovers over it.
+                Returns to original color immediately after mouse off
+              </li>
+            </ul>
+          </td>
+          <td style="border: 1px solid black; padding: 8px">
+            <ul>
+              <li>
+                Dropdown options highlight blue when hover, but last hovered
+                option remains blue if mouse goes outside of dropdown box
+              </li>
+              <li>
+                Divider within dropdown to separate general and specific filter
+                types
+              </li>
+            </ul>
+          </td>
+          <td style="border: 1px solid black; padding: 8px">
+            <ul>
+              <li>Can scroll through dropdown options</li>
+              <li>No hover effects</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td style="border: 1px solid black; padding: 8px; font-weight: bold">
+            Keyboard
+          </td>
+          <td style="border: 1px solid black; padding: 8px">
+            <ul>
+              <li>Can cycle through options with up and down arrow keys</li>
+              <li>
+                Sold out options are grayed out and not selectable, cursor
+                cycles back to top
+              </li>
+              <li>Tab doesn't do anything</li>
+              <li>Hitting any key jumps cursor to bottom option</li>
+              <li>Escape collapses dropdown, focus returns to webpage</li>
+            </ul>
+          </td>
+          <td style="border: 1px solid black; padding: 8px">
+            <ul>
+              <li>
+                Can jump to option by pressing the key the option's text starts
+                with
+              </li>
+              <li>Pressing escape returns focus to search text box</li>
+              <li>
+                Doesn't cycle: press down on bottom option doesn't jump to top
+              </li>
+            </ul>
+          </td>
+          <td style="border: 1px solid black; padding: 8px">
+            <ul>
+              <li>
+                Dropdown box becomes search text box, can type in category name
+              </li>
+              <li>Can use arrow keys to go through options</li>
+              <li>Escape selects the option highlighted</li>
+              <li>Enter selects the option highlighted</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td style="border: 1px solid black; padding: 8px; font-weight: bold">
+            Touch
+          </td>
+          <td style="border: 1px solid black; padding: 8px">
+            <ul>
+              <li>Functionality very similar to mouse</li>
+              <li>Option gets highlighted when touch and hold</li>
+              <li>
+                When swiping up and down on dropdown, options highlight under
+                finger
+              </li>
+              <li>Can't click grayed out sold out options</li>
+            </ul>
+          </td>
+          <td style="border: 1px solid black; padding: 8px">
+            No mobile component
+          </td>
+          <td style="border: 1px solid black; padding: 8px">
+            <ul>
+              <li>Similar to web browser</li>
+              <li>
+                Swiping left shrinks the dropdown box (can see more background)
+              </li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="section flex-container">
+      <div class="box">
+        <h2>Outputs</h2>
+        <p>
+          Users must receive feedback for their actions, which is why many
+          components have their own unique ways to reflect their current state.
+          As users, we have learned over time how certain components express
+          themselves, to the point where we can determine its state at a glance.
+          Below, I've listed some of my findings after using various methods of
+          input to change the state of dropdowns.
+        </p>
+      </div>
+      <div class="box">
+        <h2>What would a screen reader add?</h2>
+        <p>
+          In the case that a user wants to determine how many options there are,
+          screen readers can be very helpful as they verbalize the number of
+          menu items when a menu is selected. It will also repeat back the
+          selected option after the menu collapses, keeping the selected option
+          fresher in the user’s memory.
+        </p>
+      </div>
+    </div>
+    <table style="border-collapse: collapse; width: 100%">
+      <thead>
+        <tr>
+          <th style="border: 1px solid black; padding: 8px"></th>
+          <th style="border: 1px solid black; padding: 8px">Arc Browser</th>
+          <th style="border: 1px solid black; padding: 8px">qBittorrent</th>
+          <th style="border: 1px solid black; padding: 8px">Apple Music</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="border: 1px solid black; padding: 8px; font-weight: bold">
+            Mouse
+          </td>
+          <td style="border: 1px solid black; padding: 8px">
+            <ul>
+              <li>Selected choice has check mark</li>
+              <li>Option blinks when clicked on</li>
+              <li>No color indication for selected option</li>
+              <li>
+                When collapsed, the selected option's text is displayed in the
+                box
+              </li>
+            </ul>
+          </td>
+          <td style="border: 1px solid black; padding: 8px">
+            <ul>
+              <li>
+                When clicked, option blinks blue before dropdown disappears
+              </li>
+            </ul>
+          </td>
+          <td style="border: 1px solid black; padding: 8px">
+            <ul>
+              <li>Selected option is highlighted in different color</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td style="border: 1px solid black; padding: 8px; font-weight: bold">
+            Keyboard
+          </td>
+          <td style="border: 1px solid black; padding: 8px">
+            <ul>
+              <li>
+                Voiceover says how many menu items there are when dropdown is
+                clicked
+              </li>
+              <li>Voiceover repeats selected choice</li>
+            </ul>
+          </td>
+          <td style="border: 1px solid black; padding: 8px">
+            <ul>
+              <li>
+                Option that will be selected when enter is pressed is
+                highlighted blue
+              </li>
+            </ul>
+          </td>
+          <td style="border: 1px solid black; padding: 8px">
+            <ul>
+              <li>
+                Current option is highlighted pink and displayed in box without
+                pressing enter or escape
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td style="border: 1px solid black; padding: 8px; font-weight: bold">
+            Touch
+          </td>
+          <td style="border: 1px solid black; padding: 8px">
+            <ul>
+              <li>
+                Selected option briefly highlights before dropdown disappears
+              </li>
+              <li>Option is displayed in text box</li>
+            </ul>
+          </td>
+          <td style="border: 1px solid black; padding: 8px">
+            No mobile component
+          </td>
+          <td style="border: 1px solid black; padding: 8px">
+            <ul>
+              <li>Selected option highlights and dropdown disappears</li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>State Models</h2>
+    <p>
+      I took a closer look at the interaction flow of the dropdown component in
+      qBittorrent by creating these state models, and they help to visualize how
+      the component responds to every input. No need to scroll through countless
+      videos/gifs!
+    </p>
+
+    <div class="container">
+      <div class="header header-left">Mouse User</div>
+      <div class="header header-right">Keyboard User</div>
+      <img id="mouseUser" src="./assets/mouseUser.png" />
+      <img id="keyboardUser" src="./assets/keyboardUser.png" />
+    </div>
+
+    <h3>Redesigning with Tradeoffs</h3>
+    <p>
+      Now what if we redesigned the component but purposefully added some new
+      features with some tradeoffs? Here are two ideas I had where some
+      operations are made much more efficient but learnability or ease of use
+      decreases.
+    </p>
+
+    <div class="section flex-container">
+      <div class="box">
+        <h3>Mouse User</h3>
+        <p>
+          My revised component immediately exits the expanded dropdown menu when
+          the mouse leaves its bounds. This is more efficient when users change
+          their minds, reducing the necessary number of clicks, but may be
+          harder for those with less precision over their mouse movements.
+        </p>
+      </div>
+      <div class="box">
+        <h3>Keyboard User</h3>
+        <p>
+          My revision for keyboard users allows them to jump to an option in the
+          menu based on its position by entering the number at which it is
+          located. This reduces the need to navigate using arrow keys, but
+          screenreader users will be bombarded with information in the
+          beginning, as it will read out each option and its position,
+          increasing mental strain.
+        </p>
+      </div>
+    </div>
+
+    <div class="container">
+      <img id="revisedMouse" src="./assets/revisedMouse.png" />
+      <img id="revisedKeyboard" src="./assets/revisedKeyboard.png" />
+    </div>
+
+    <h2>Redesigning with Users in Mind</h2>
+    <p>
+      After familiarizing myself with the tradeoffs of adding/removing features
+      from components, I designed my own dropdown. I drew inspiration from the
+      qBittorrent dropdown, and added a pin and unpin feature. Below are their
+      mockups in Figma with some annotations.
+    </p>
+    <div class="container">
+      <div class="header header-left">Initial State</div>
+      <div class="header header-right">Active State</div>
+      <img id="redesignInitialState" src="./assets/redesignInit.png" />
+      <img id="redesignActiveState" src="./assets/redesignActive.png" />
+    </div>
+
+    <h2>
+      Takeaways
+    </h2>
+    <p>
+      <ul>
+        <li>The dropdown menus in all applications share common functionalities but differ by adding additional features that do not affect standard user interactions.</li>
+        <li>The redesign focuses on improving efficiency rather than altering expected behavior.</li>
+        <li>In qBittorrent:
+          <ul>
+            <li>Users cannot tab through components to change focus.</li>
+            <li>The redesign enables keyboard-only users to navigate more easily.</li>
+            <li>Instead of dragging to pin or unpin an item, users can press "P" to toggle between pinned and unpinned states.</li>
+          </ul>
+        </li>
+        <li>The new component addresses a mismatch for users who:
+          <ul>
+            <li>Are short on time.</li>
+            <li>Dislike searching through many options.</li>
+            <li>Benefit from pins, which reduce the need for excessive scrolling.</li>
+          </ul>
+        </li>
+        <li>In Apple Music:
+          <ul>
+            <li>Users with poor vision may struggle to see their cursor position.</li>
+            <li>The absence of a color highlight over the current hover option makes it difficult to determine which option they are selecting.</li>
+          </ul>
+        </li>
+        <li>In browsers:
+          <ul>
+            <li>A color shift is used to indicate unselectable options.</li>
+            <li>This distinction is difficult for color-blind users to perceive.</li>
+          </ul>
+        </li>
+        <li>Mouse users are prioritized the most because:
+          <ul>
+            <li>Most users navigate web pages using a mouse.</li>
+            <li>Keyboard navigation is typically less intuitive and efficient.</li>
+            <li>This creates challenges for users without a mouse or with limited input options.</li>
+            <li>Some interactions require scroll wheels, which only mouse users have.</li>
+          </ul>
+        </li>
+      </ul>      
+    </p>
+  </body>
 </html>
