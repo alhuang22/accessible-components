@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personas & Storyboarding</title>
+    <!-- import CSS styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <a href='index.html'> Home </a>
+
+  <body>
+    <div class="section">
+      <h1>The Vending Machine Interface</h1>
+      <div class="section info-grid">
+        <div>
+          <p class="info-item">Author</p>
+          <p>
+            Alex Huang, <br />
+            Computer Science, <br />
+            Brown University
+          </p>
+        </div>
+        <div>
+          <p class="info-item">Project</p>
+          <p>CSCI1300 <br> Personas & Storyboarding</p>
+        </div>
+        <div>
+          <p class="info-item">Timeline</p>
+          <p>2 weeks</p>
+        </div>
+        <div>
+          <p class="info-item">Tools Used</p>
+          <p>Boords, HTML, CSS</p>
+        </div>
+      </div>
+
+      <div class="section flex-container">
+        <div class="box">
+          <h2>Overview</h2>
+          <p>
+            Vending machines are the pinnacle of convenience. Their strategic
+            locations make a large variety of snacks/drinks available to its
+            users. The machine's interface reduces the need for a cashier, as
+            users can shop, pay, and make change using its buttons.
+          </p>
+        </div>
+        <div class="box">
+          <h2>Usage</h2>
+          <p>
+            The specific machine that I observed first required payment, either
+            using the card reader or cash and coins. Then users made a selection
+            using a keypad.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-hover">
+      <img id="sketch" src="./assets/personas/sketch.png" />
+      <p style="text-align: center">
+        Sketch of a common vending machine interface (hover to zoom)
+      </p>
+    </div>
+
+    <h2>Field Work</h2>
+    <p>
+      To gain some practical insight on the interface, I decided to observe
+      users of vending machines at my university. Listed below are some key
+      observations I made.
+    </p>
+
+    <div class="container">
+      <ul>
+        <li>
+          Most users already have an idea of what they want; they briefly glance
+          at the options and confirm its location before paying and typing into
+          the keypad.
+        </li>
+        <li>
+          Users don’t pay until they know what they want, meaning they won’t
+          spend a long time browsing items after swiping their card.
+        </li>
+        <li>
+          There were practically no moments where the user took their attention
+          away from the snack machine, even when it was dispensing the item.
+        </li>
+        <li>
+          Drink machine users were more likely to look at their phone or
+          elsewhere while using the machine.
+        </li>
+        <li>Swiping the ID was a finicky process for some users.</li>
+      </ul>
+      <img
+        id="vending machine"
+        src="./assets/personas/vending.png"
+        style="height: 75%; margin-left: auto; margin-right: auto"
+      />
+    </div>
+
+    <h3>Interviewing the users</h3>
+    <p>
+      After they got their item, I asked them a few quick questions about their
+      experience. I've summarized their responses to each question below, click
+      on a question to see the summaries!
+    </p>
+
+    <div class="dropdown-container">
+      <div class="dropdown-section">
+        <div class="dropdown">
+          <button onclick="toggleDropdown(this)">
+            What is your intuition for the first step when using the vending
+            machine?
+          </button>
+          <div class="dropdown-content">
+            <p>
+              Those who frequently use the school vending machines say that
+              their intuition is to pay first then make their selection, but
+              less frequent users say that their intuition is to select first.
+              Frequent users’ intuitions reflect the way our school vending
+              machines operate.
+            </p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button onclick="toggleDropdown(this)">
+            Which vending machine format do you prefer?
+          </button>
+          <div class="dropdown-content">
+            <p>
+              Users prefer the simplicity of the drink machine format, though
+              they also acknowledge that it limits the possible selections. They
+              agree that fewer options aren’t always a bad thing, as long as
+              there are options for all the common palettes.
+            </p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button onclick="toggleDropdown(this)">
+            Do the sounds of the vending machine affect your experience?
+          </button>
+          <div class="dropdown-content">
+            <p>
+              Audio feedback only seems to be important for some, but those who
+              don’t find it that important still say that sound is better than
+              no sound. It is especially important for the drink machine since
+              users can’t see inside of it, and they use the audio cues as an
+              indicator that the machine is processing their request.
+            </p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button onclick="toggleDropdown(this)">
+            What is one feature you wish the vending machines had?
+          </button>
+          <div class="dropdown-content">
+            <p>
+              One user wishes that there was a feature to alert the owners if
+              items were sitting in the machines for a long period of time,
+              alerting them to swap it with something more desirable by the
+              masses. Others wish that the card reader either displayed better instructions or could be easily swiped in both directions.
+            </p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button onclick="toggleDropdown(this)">
+            What are some challenges you believe a first-time user would
+            encounter?
+          </button>
+          <div class="dropdown-content">
+            <p>
+              If someone wants to buy multiple items, it’s hard to tell if the
+              machine wants you to pay again or if you can consecutively select
+              items. Getting the speed and direction of the swipe is difficult
+              even for familiar users.
+            </p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+            <button onclick="toggleDropdown(this)">
+              Do you like the item location format of this machine?
+            </button>
+            <div class="dropdown-content">
+              <p>
+                Most users are fine with the strictly numerical locations of the items (10, 12, 14, etc). However, one user said that they prefer alphanumeric locations since it was more intuitive to them to remember rows and columns of items if they were ordering multiple.
+              </p>
+            </div>
+          </div>
+      </div>
+
+      <div class="image-section">
+        <img src="./assets/personas/minden.jpg" alt="Drinks Vending Machine" />
+      </div>
+    </div>
+
+    <script>
+      function toggleDropdown(button) {
+        var content = button.nextElementSibling;
+        var isVisible = content.style.display === "block";
+        document
+          .querySelectorAll(".dropdown-content")
+          .forEach((el) => (el.style.display = "none"));
+        content.style.display = isVisible ? "none" : "block";
+      }
+    </script>
+
+    <h2>Crafting Personas</h2>
+    <p>
+      Using the above observations, I created two personas that drew
+      characteristics from each user type that I encountered. To display the
+      thoughts and actions behind each persona, I made empathy maps that contain
+      things they would think, feel, say, and do.
+    </p>
+
+    <div class="container">
+      <img id="tab" src="./assets/personas/tab.png" />
+      <img id="miu" src="./assets/personas/miu.png" />
+      <div class="header-left">
+        <h2 class="persona-name">Tab</h2>
+        <p><ul>
+            <li>College student who stays up late due to his tendency to procrastinate on all of his assignments.</li>
+            <li>Always in a rush, so he feels that the vending machines take way too long to dispense items.</li>
+            <li>Sometimes his favorite items get restocked in different locations, and he has to enter a different number than he usually does.</li>
+            <li>Tab reflects a majority group of users. Vending machines attract users who highly prioritize convenience at all hours of the day.</li>
+            <li>They simply want a quick and tasty way to satisfy their hunger, with less priority on their long-term health.</li>
+        </ul></p>
+      </div>
+      <div class="header-right"><h2 class="persona-name">Miu</h2>
+        <p><ul>
+            <li>Student who rarely uses vending machines and believes that food should be enjoyed in the presence of others.</li>
+            <li>The card reader is a little tricky to figure out, and its awkward placement near the floor causes her back to hurt.</li>
+            <li>She represents new users and the common struggles they face when using the machine for the first time.</li>
+            <li>She doesn’t see the vending machines as a first option for snacks and would rather go to dining halls or outside snack/dessert establishments.</li>
+            <li>There isn’t much indication on how to use the machine for unfamiliar users; they must learn by trial and error.</li>
+        </ul></p></div>
+    </div>
+
+    <h2>Storyboard</h2>
+    <p>I also created a storyboard that depicts Tab's process when using the vending machine. It provides a visualization on the flow of events from start to finish. The events and environment leading up to interface use are important to note as well.</p>
+    <img id="storyboard" src="./assets/personas/storyboard.png" />
+  </body>
+</html>
