@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Redesign</title>
+    <link rel="stylesheet" href="handin-styles.css" />
+  </head>
+  <a href="../index.html"> Home </a>
+
+  <body>
+    <div class="section">
+      <h1>A Modern and Dynamic Redesign for a Local Town</h1>
+    </div>
+
+    <div class="section info-grid">
+      <div>
+        <p class="info-item">Author</p>
+        <p>
+          Alex Huang, <br />
+          Computer Science, <br />
+          Brown University
+        </p>
+      </div>
+      <div>
+        <p class="info-item">Project</p>
+        <p>
+          CSCI1300 <br />
+          Responsive Redesign
+        </p>
+      </div>
+      <div>
+        <p class="info-item">Timeline</p>
+        <p>2 weeks (2025)</p>
+      </div>
+      <div>
+        <p class="info-item">Tools Used</p>
+        <p>Figma, HTML, CSS</p>
+      </div>
+    </div>
+    <div class="highlight"><h2>Overview</h2></div>
+    <p>
+      Government websites are known to be outdated and utilitarian, so I
+      explored the websites of the cities in Rhode Island. I found the website
+      for the town of Tiverton, a small beach town 25 miles from my school.
+      Despite the dated look and some odd design choices, I liked the overall
+      color palette and functionality of the site, so I sought out to redesign
+      the site to address some of the issues I found, creating a site that was
+      also user-friendly on various common screen sizes. You
+      <a href="tiverton-redesign.html">can access my final redesign here.</a>
+    </p>
+    <h2>Analyzing the Original</h2>
+    <p>
+      The original site is located at
+      <a href="https://www.tiverton.ri.gov/">tiverton.ri.gov</a>. I've included
+      a snapshot of the landing page that I will redesign below:
+    </p>
+    <img class="center" src="assets/original-site.png" />
+    <h3>Problems</h3>
+    <p>
+      I began by flipping through the site and interacting with it to check for
+      general issues. Here are some of the problems I found, they were primarily
+      visual issues:
+    </p>
+    <ul>
+      <li>
+        Text in the top left has very low contrast with the background, can’t
+        even tell it’s there without looking closely.
+      </li>
+      <li>
+        Menu text is small, users have learned that menus on the left side are
+        usually collapsible, not the case for this one.
+      </li>
+      <li>
+        Awkward large blank space at top of screen between town name text and
+        American flag.
+      </li>
+      <li>
+        Menu options do different actions when clicked on, some expand, some
+        redirect to a new page, and others change what’s displayed on the right.
+      </li>
+      <li>
+        Users learn from other webpages that they can usually swipe through
+        slideshows, this one can only change slides by clicking the slide number
+        or next/previous buttons.
+      </li>
+    </ul>
+    <p>
+      Sometimes it's not enough to simply look at a site to detect all the
+      issues. A lot of accessibility problems can be detected by using tools to
+      scan through the HTML content of the webpage. I used
+      <a href="https://wave.webaim.org/">webAIM WAVE</a> to detect additional
+      accessibility problems. I found that some of the contrast issues it raised
+      weren't completely accurate:
+    </p>
+    <ul>
+      <li>
+        WAVE detected many images missing alternative text, making the site less
+        accessible for screen reader users.
+      </li>
+      <li>
+        The text box to search the site doesn’t have a form label, which also
+        affects screen reader accessibility.
+      </li>
+      <li>
+        WAVE flagged the left menu text as having very low contrast, but
+        visually, the white text on a dark blue background is pretty readable.
+      </li>
+    </ul>
+    <h2>Beginning the Redesign Process</h2>
+    <h3>Site Redesign Planning</h3>
+    <p>
+      To map out the changes I would make, I needed to create a style guide that
+      I can refer to throughout the process. This way I wouldn't be making
+      changes to my site on the fly, ensuring a consistent final design. Below
+      is my style guide, which contains fonts, components, and most importantly,
+      the site's color palette.
+    </p>
+    <img class="center" style="width: 100%" src="assets/style-guide.png" />
+    <h3>Creating Mockups</h3>
+    <p>
+      With components and a color palette to adhere to, it was time to create
+      mockups in Figma. Since I wanted my site to be responsive (meaning
+      components would resize according to the size of the screen), it made
+      sense to make three mockups for what the site would look like under common
+      screen sizes: desktop (3840x2160px), tablet (768x1024px), and phone
+      (375x667px). I've also added some annotations, such that a developer could
+      create these designs directly from these mockups:
+    </p>
+    <figure>
+      <img class="center" src="assets/desktop-mockup.png" />
+      <figcaption style="text-align: center">Desktop Mockup</figcaption>
+    </figure>
+    <figure>
+      <img class="center" src="assets/tablet-mockup.png" />
+      <figcaption style="text-align: center">Tablet Mockup</figcaption>
+    </figure>
+    <figure>
+      <img class="center" src="assets/mobile-mockup.png" />
+      <figcaption style="text-align: center">Mobile Mockup</figcaption>
+    </figure>
+    <h2>Implementing the Redesign</h2>
+    <p>
+      I developed the new site completely in HTML and CSS, using colors from my
+      style guide and double checking to make sure that all aspects of the site
+      were easily readable. For the dynamic aspect, I utilized media queries,
+      changing the amount of columns present in the grid style CSS interface I
+      chose to use. You can interact with my redesigned site
+      <a href="tiverton-redesign.html">here</a>. Next, I will showcase what the
+      site looks like for users of different screen sizes.
+    </p>
+    <h3>Desktop Users</h3>
+    <img class="center" src="assets/desktop-site.png" />
+    <ul>
+      <li>
+        Updated search bar that users can select to search either town site or
+        RI.gov site
+      </li>
+      <li>
+        Common nav bar that users commonly see, yellow arrows indicate dropdowns
+        that appear on hover
+      </li>
+      <li>Three columns to display more content at the top</li>
+    </ul>
+    <h3>Tablet Users</h3>
+    <img class="center" src="assets/tablet-site.png" />
+    <ul>
+      <li>
+        Hamburger icon instead of nav bar to avoid screen clutter on smaller
+        screen. On the site, the hamburger icon is just a dummy button.
+      </li>
+      <li>
+        Assistance box gets moved into hamburger menu to make space for the
+        carousel to remain the main focus at the top of the body.
+      </li>
+    </ul>
+    <h3>Mobile Users</h3>
+    <img class="center" style="width: 40%" src="assets/mobile-site.png" />
+    <ul>
+      <li>
+        Body collapses into single column, common scrollable interface that
+        mobile users are accustomed to
+      </li>
+      <li>
+        Search bar and contact us become buttons at top of screen that users can
+        easily click when desired
+      </li>
+      <li>
+        Clicking any of the buttons at the top would expand a separate screen
+        over the site's content, but now they are simply dummy buttons
+      </li>
+    </ul>
+    <h2>Final Thoughts</h2>
+    <p>Here are my key takeaways from redesigning Tiverton's website:</p>
+    <ul>
+      <li>
+        Designing a dynamic webpage that looks good for various screen sizes is
+        surprisingly frustrating (especially in pure html/css)
+      </li>
+      <li>
+        You can't always trust accessibility tools, they sometimes exaggerate
+        issues, or they will suggest high contrast text colors that aren't
+        aesthetically pleasing
+      </li>
+      <li>
+        It's hard to strike a balance between a website that feels fresh/new and
+        one that users can easily navigate
+      </li>
+    </ul>
+  </body>
+</html>
