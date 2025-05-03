@@ -1,5 +1,5 @@
 body {
-  font-family: "Jet Set"; /* or another techno/pixel-style font */
+  font-family: "Jet Set";
   src: url("fonts/jet_set/jet-set.ttf");
   margin: 10%;
   margin-top: 5%;
@@ -173,7 +173,6 @@ p {
   flex: 1;
 }
 
-/* Responsive images */
 img {
   max-width: 100%;
   height: auto;
@@ -186,13 +185,13 @@ img {
   margin: auto;
   width: 50%;
   display: block;
-  overflow: visible; /* Ensure content can overflow */
+  overflow: visible;
 }
 
 .container-hover > img {
-  display: block; /* Remove inline behavior */
-  width: 100%; /* Ensure normal width */
-  transition: transform 0.3s ease-in-out; /* Smooth transition */
+  display: block;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -202,10 +201,10 @@ img {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  grid-template-columns: 1fr 1fr;
   grid-auto-rows: min-content;
-  gap: 0px; /* Space between images */
-  height: auto; /* Adjust as needed */
+  gap: 0px;
+  height: auto;
   align-items: start;
   margin-bottom: 0;
 }
@@ -244,35 +243,35 @@ img {
 .horizontal {
   width: 100%;
   height: auto;
-  object-fit: cover; /* Ensures images don’t stretch */
+  object-fit: cover;
 }
 
 .image-column {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center horizontally */
+  align-items: center;
   justify-content: center;
 }
 
 .vertical {
-  grid-row: span 2; /* Makes the vertical image span both rows */
-  width: 50%; /* Allow natural width */
-  height: 80%; /* Take full height */
+  grid-row: span 2;
+  width: 50%;
+  height: 80%;
   object-fit: cover;
   display: block;
   margin: auto;
 }
 
 .responsive-img {
-  width: 100%; /* Images fill container */
-  max-width: 700px; /* Adjust max size */
-  height: 100%; /* Fix height to keep them uniform */
-  object-fit: cover; /* Ensures images maintain aspect ratio while filling space */
+  width: 100%;
+  max-width: 700px;
+  height: 100%;
+  object-fit: cover;
 }
 
 .responsive-vertical {
-  height: 500px; /* Images fill container */
-  width: 300px; /* Fix height to keep them uniform */
+  height: 500px;
+  width: 300px;
   object-fit: cover;
 }
 

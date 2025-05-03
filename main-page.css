@@ -1,4 +1,3 @@
-/* reset & base */
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +5,7 @@
 }
 
 body {
-  font-family: "Jet Set"; /* or another techno/pixel-style font */
+  font-family: "Jet Set";
   src: url("fonts/jet_set/jet-set.ttf");
   color: #111;
   background: #fff;
@@ -60,13 +59,13 @@ body {
   padding: 2rem;
   box-sizing: border-box;
 
-  display: flex; /* keep your layout */
+  display: flex;
   align-items: start;
   justify-content: center;
   gap: 5rem;
 
   clip-path: polygon(
-    /* your original points exactly as before */ /* — top edge — */ 5% 10%,
+    5% 10%,
     20% 3%,
     17% 12%,
     35% 3%,
@@ -76,7 +75,7 @@ body {
     90% 1%,
     100% 2%,
 
-    /* — right side — */ 100% 10%,
+    100% 10%,
     95% 24%,
     100% 30%,
     97% 50%,
@@ -84,14 +83,14 @@ body {
     100% 80%,
     93% 95%,
 
-    /* — bottom edge — */ 65% 90%,
+    65% 90%,
     55% 95%,
     60% 85%,
     45% 86%,
     40% 92%,
     0% 100%,
 
-    /* — left side — */ 7% 75%,
+    7% 75%,
     1% 76%,
     6% 40%,
     0% 39%
@@ -275,7 +274,6 @@ main {
   opacity: 0.7;
 }
 
-/* 3) but when you hover one specific card, make it fully opaque again */
 #case-studies .case-study:hover {
   opacity: 1;
 }
