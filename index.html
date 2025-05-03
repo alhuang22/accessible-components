@@ -1,23 +1,162 @@
-<!-- TO RUN IN BROWSER:
-    1. Install vscode extension Name: open in `browser open-in-browser` by TechER
-    2. Right click html file and either run in default browser or another browser
-  -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <!-- import CSS styles -->
-    <link rel="stylesheet" href="styles.css" />
+    <title>Alex Huang | Portfolio</title>
+    <link rel="stylesheet" href="main-page.css" />
   </head>
-
   <body>
-    <h1>Interaction Design Projects</h1>
-    <a href="component.html"> Component Case Study </a>
-    <br />
-    <a href="persona.html"> Personas & Storyboarding </a>
-    <br />
-    <a href="responsive-redesign/responsive.html">Responsive Redesign</a>
+    <div class="page-wrapper">
+      <div class="video-container">
+        <video autoplay muted loop>
+          <source src="assets/menu.mp4" type="video/mp4" />
+          Your browser doesn’t support HTML5 video.
+        </video>
+
+        <div class="layout">
+          <div class="layout-fill">
+            <div class="pause-text">
+              <header class="hero">
+                <div class="hero-stage">
+                  <span class="hero-stage--small">stage</span>
+                  <span class="hero-stage--large">STUDENT</span>
+                </div>
+                <h1 class="hero-name">Alex Huang</h1>
+                <p class="hero-tagline">currently interested in concurrency</p>
+              </header>
+
+              <nav class="sidebar">
+                <ul>
+                  <li><a href="#case-studies-text">CASE STUDIES</a></li>
+                  <li><a href="about-me/about-me.html">ABOUT ME</a></li>
+                  <li><a href="assets/portfolio/resume2024.pdf">RESUME</a></li>
+                  <li>
+                    <a
+                      style="cursor: pointer"
+                      onclick="window.open('https://www.youtube.com/watch?v=Q8fl2tLKAlo&ab_channel=LILUZIVERT')"
+                      >FOR FUN</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="socials">
+        <img
+          style="
+            filter: drop-shadow(6px 0px #56afed) drop-shadow(11px 0px #e8e672)
+              drop-shadow(15px 0px #f8d368);
+          "
+          src="assets/portfolio/piranha-silo.png"
+        />
+        <div class="icons">
+          <span class="icons-label">Connect with me:</span>
+          <div class="icons-list">
+            <img
+              src="assets/portfolio/insta.png"
+              style="cursor: pointer"
+              onclick="window.open('https://www.instagram.com/a_huang1/', '_blank');"
+            />
+            <img
+              src="assets/portfolio/github.png"
+              style="cursor: pointer"
+              onclick="window.open('https://github.com/alhuang22', '_blank');"
+            />
+            <img
+              src="assets/portfolio/linkedin.png"
+              style="cursor: pointer"
+              onclick="window.open('https://www.linkedin.com/in/alex-huang-0620751b6/', '_blank')"
+            />
+          </div>
+        </div>
+        <img
+          style="
+            filter: drop-shadow(6px 0px #dd90c8) drop-shadow(11px 0px #7867b9)
+              drop-shadow(15px 0px #b5cde0);
+          "
+          src="assets/portfolio/silo.png"
+        />
+      </div>
+      <main>
+        <div id="case-studies-text" class="case-studies-text">
+          <h4>Case Studies</h4>
+        </div>
+        <section id="case-studies">
+          <article
+            class="case-study"
+            onclick="window.location.href='responsive-redesign/responsive.html'"
+          >
+            <div class="case-bg"></div>
+            <div class="case-content">
+              <img
+                src="responsive-redesign/assets/desktop-site.png"
+                alt="Redesigned website"
+              />
+              <div>
+                <h2>Tiverton Website Redesign:</h2>
+                <p>
+                  Redesigning an outdated government website to make it more
+                  user-friendly.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="case-study"
+            onclick="window.location.href='persona.html'"
+          >
+            <div class="case-bg"></div>
+            <div class="case-content">
+              <img src="assets/personas/tab.png" alt="Case Study 2 image" />
+              <div>
+                <h2>Preparing Personas:</h2>
+                <p>Conducting user research on vending machines.</p>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="case-study"
+            onclick="window.location.href='component.html'"
+          >
+            <div class="case-bg"></div>
+            <div class="case-content">
+              <img
+                src="assets/redesignActive.png"
+                alt="Accessible components design"
+              />
+              <div>
+                <h2>Custom Dropdown Component:</h2>
+                <p>
+                  Designed a more accessible dropdown menu component with more
+                  features.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="case-study"
+            onclick="window.location.href='iterative/iterative-design.html'"
+          >
+            <div class="case-bg"></div>
+            <div class="case-content">
+              <img src="iterative/images/image8.png" alt="Case Study 4 image" />
+              <div>
+                <h2>Designing for a Startup:</h2>
+                <p>
+                  Iteratively designed various screens for an AI startup with a
+                  team of three other students.
+                </p>
+              </div>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
   </body>
 </html>

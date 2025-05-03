@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pickle UI Design</title>
+    <link rel="stylesheet" href="iterative.css" />
+  </head>
+  <a href='../index.html'> Home </a>
+  <body>
+    <h1 class="title">Pickle UI Design</h1>
+    <div class="section">
+        <div class="section info-grid">
+          <div style="border-radius: 20px; background-color: #6FC6EE; padding: 20px">
+            <p class="info-item">Author</p>
+            <p>
+              Alex Huang, <br />
+              Computer Science, <br />
+              Brown University
+            </p>
+          </div>
+          <div style="border-radius: 20px; background-color: #B2CC32; padding: 20px">
+            <p class="info-item">Project</p>
+            <p>CSCI1300 <br> Iterative Design Group Project with <span class="names">Ashton Glover</span>, <span class="names">Alexandra Mercedes-Santos</span>, and <span class="names">Hannah Zhang</span></p>
+          </div>
+          <div style="border-radius: 20px; background-color: #7B1569; padding: 20px">
+            <p class="info-item">Timeline</p>
+            <p style="color: white;">2 weeks</p>
+          </div>
+          <div style="border-radius: 20px; background-color: #FAC608; padding: 20px">
+            <p class="info-item">Tools Used</p>
+            <p>HTML/CSS, User Research, Figma,
+                Balsamiq, Loom</p>
+          </div>
+        </div>
+
+    <div class="group">
+      <h2>Overview:</h2>
+      <p>
+        Pickle AI is an AI clone that lip-syncs to your voice in real time,
+        replacing your camera feed to make users look professional at all times,
+        even if they are calling from bed, the couch, or while walking around.
+        Our goal was to design an interface that made training and using this
+        model intuitive and trustworthy so that anyone regardless of tech
+        background can create a high-quality body double that works for them.
+      </p>
+    </div>
+
+    <div class="group">
+        <h2>The Problem:</h2>
+    <p>
+      In remote-first or hybrid work environments, there's rising pressure to
+      "show up" professionally on camera—often at the expense of comfort,
+      flexibility, and mental wellbeing. Pickle AI thus aims to tackle the
+      growing issue of meeting fatigue, allowing users to maintain a
+      professional video presence without compromising where or how they
+      actually speak from. Pickle's users include remote workers, creatives,
+      educators, students, and anyone who wants to separate how they appear
+      professionally from where they actually are.
+    </p>
+    </div>
+
+    <div class="group">
+        <h2>My Contributions:</h2>
+        <p>
+            Since this was a four person group project, not all of the content on this page is work that I specifically did. My specific contributions were:
+            <ul>
+                <li>The second set of sketches that include the configuration, control pane, and setup screens</li>
+                <li>Login screens for Lo-Fi and Hi-Fi Prototypes</li>
+                <li>Research into the Pickle product for Loom video introduction</li>
+                <li>Conducted user research for Hi-Fi prototype</li>
+                <li>Demo of login and user profile screens</li>
+            </ul>
+        </p>
+    </div>
+
+    <div class="group">
+        <h2>Sketches and Wireframe</h2>
+        <ul>
+          <li>
+            After reviewing the company and its goals, we sat down and came up with
+            sketches of what we imagined the interface would look like
+          </li>
+          <li>
+            Two of us chose to focus more on the product, while the other two
+            focused more on the web design for the product
+          </li>
+          <li>Our initial sketches can be seen below:</li>
+        </ul>
+    
+        <img src="images/image4.png" alt="Initial sketch 1" />
+        <img src="images/image11.jpg" alt="Initial sketch 2" />
+        <img src="images/image5.png" alt="Initial sketch 3" />
+        <img src="images/image6.jpg" alt="Initial sketch 4" />
+    
+        <ul>
+          <li>
+            After sitting down as a group and reviewing our sketches, we came up
+            with an initial wireframe for 3 main screens using Balsamiq:
+          </li>
+        </ul>
+    
+        <img src="images/image12.png" alt="Wireframe 1" />
+        <img src="images/image7.png" alt="Wireframe 2" />
+        <img src="images/image1.png" alt="Wireframe 3" class="center" />
+    
+        <ul>
+          <li>
+            We tried to aim for a minimalistic design that focused more on the
+            usability side
+          </li>
+          <li>
+            We wanted to highlight the key screens that users would interact with,
+            so we chose to model the login screen and the screen where the user
+            chose the video that would be fed to the Pickle AI to replace their
+            camera
+          </li>
+          <li>
+            Furthermore, we chose to represent a preview screen which depicts the
+            live camera view of yourself as well as the AI version
+          </li>
+          <li>
+            We felt that these three screens represented the key functionalities and
+            points of user interaction for Pickle, so we wanted to focus our
+            attention on these
+          </li>
+          <li>
+            For a more detailed description of our sketches and wireframe, we
+            recorded a Loom video linked here:
+            <a
+              href="https://www.loom.com/share/c8640ee5afb64705b1cfa858ef67e8ab?sid=c3c4b92e-0574-445c-bbd3-c3a4d04a015f"
+              >https://www.loom.com/share/c8640ee5afb64705b1cfa858ef67e8ab?sid=c3c4b92e-0574-445c-bbd3-c3a4d04a015f</a
+            >
+          </li>
+        </ul>
+    </div>
+
+    <div class="group">
+        <h2>Wireframe Feedback and Iteration</h2>
+        <p>
+          As we all know, Lo-Fi prototypes are rarely ready to be user-facing. No
+          design process is complete without getting feedback from an outside party.
+          Thus, we went to receive feedback from someone familiar with good design,
+          a TA of our interaction design course. During our wireframe critique, we
+          received valuable and actionable feedback that helped us refine both the
+          clarity of our user flows and the interactivity within the interface.
+        </p>
+    
+        <p>Feedback we received:</p>
+        <ul>
+          <li>
+            More detail for how users can interact with each button on the profile
+            screen.
+          </li>
+          <li>
+            Add more screens, as it was unclear what the whole flow was from the 3
+            wireframed screens.
+          </li>
+          <li>Suggested a loading screen while the model was training.</li>
+          <li>
+            It was unclear if there were any requirements when the user submitted or
+            recorded a video.
+          </li>
+          <li>
+            Suggested an actual preview screen that also provides sliders to allow
+            users to change aspects of the AI model that would be shown during
+            meetings.
+          </li>
+          <li>
+            Be imaginative, the features of the app don't actually have to exist, we
+            don't want you to look at the actual product.
+          </li>
+        </ul>
+    
+        <p>
+          We addressed these items as we began to develop our final Hi-Fi Prototype.
+          Our Lo-Fi prototype had almost no features, since we weren't clear on how
+          the product actually works. We were told that the features in our
+          prototype didn't actually have to exist, which then resulted in more user
+          flows in our Hi-Fi. The model progress screen and appearance sliders
+          stemmed directly from the feedback we received. They were features that we
+          thought fit the startup's vision, but didn't know for sure if they
+          existed.
+        </p>
+    </div>
+
+    <div class="group">
+        <h2>Hi-Fi Prototype</h2>
+    <p>
+      Going forward we wanted to make changes that would reflect the feedback we
+      received from the teaching assistants.
+    </p>
+
+    <ul>
+      <li>
+        We added screens that would create a user journey that would be more
+        intuitive for the user.
+      </li>
+      <li>
+        We updated our profile page and decided to center the functionality
+        around it, as we felt a formal 'home' page wasn't necessary. From there,
+        we added navigation to the Edit Training Video, Preview Pickle Camera,
+        and Upload Video Background. Given this was a profile page, we also
+        added an option to change your profile picture.
+      </li>
+    </ul>
+
+    <img src="images/image8.png" alt="Profile page" />
+
+    <ul>
+      <li>
+        We added a training video screen and took inspiration from HireVue, a
+        platform that records users during job interview simulations, for the
+        video training screen. We liked how HireVue seamlessly integrated clear
+        on-screen instructions alongside a live camera feed. This dual focus of
+        guiding the user while capturing a real time video is central to Pickle
+        AI's functionality as well.
+      </li>
+    </ul>
+
+    <img src="images/image2.png" alt="Training video screen" />
+
+    <ul>
+      <li>
+        Our final major edit was adding a preview video screen that would show
+        the side by side cameras, alongside a settings tab with sliders as
+        suggested.
+      </li>
+    </ul>
+
+    <img src="images/image9.png" alt="Preview video screen" />
+
+    <p>
+      To ensure visual consistency and clarity throughout the hi-fi prototype,
+      we developed a simple design system to adhere to. Our goal was to create
+      an interface that felt trustworthy for professional use, yet light enough
+      to lower the intimidation factor of training an AI body double.
+    </p>
+
+    <img src="images/image10.png" alt="Design system" />
+
+    <ul>
+      <li>We chose INRIA Sans for its clean, rounded geometry</li>
+      <li>
+        The color palette revolves around a spectrum of greens chosen to
+        reference the product name. The darker green was used for primary calls
+        to action as it had a greater contrast with the white background, and
+        the lighter shades indicated secondary actions.
+      </li>
+    </ul>
+
+    <p>You can view the full flow below:</p>
+    <img src="images/image3.gif" alt="Full prototype flow" />
+
+    <p>Our final prototype can be found in the Figma linked below:</p>
+    <p>
+      <a
+        href="https://www.figma.com/design/vIS6ebSH4Lk8odbQJ9lyLf/pickle-cs1300-thing?node-id=0-1&t=3qFxMx4yb8BHPvIk-1"
+        >https://www.figma.com/design/vIS6ebSH4Lk8odbQJ9lyLf/pickle-cs1300-thing?node-id=0-1&t=3qFxMx4yb8BHPvIk-1</a
+      >
+    </p>
+
+    <p>
+      You can also view a live demo of our Hi-Fi alongside further explanations
+      of our design choices in this loom video:
+      <a
+        href="https://www.loom.com/share/2a92683908d646428c11e1ad9183dba7?sid=86559f3d-4dee-4adb-941c-b422a26e6a29"
+        >https://www.loom.com/share/2a92683908d646428c11e1ad9183dba7?sid=86559f3d-4dee-4adb-941c-b422a26e6a29</a
+      >
+    </p>
+    </div>
+
+    <div class="group">
+        <h2>User Testing</h2>
+        <p>
+          In order to ensure our flow made sense and was easily understood by new
+          users, we conducted a few usability tests.
+        </p>
+    
+        <p>Queries:</p>
+        <ol>
+          <li>
+            If the sign in screen's background had animations of people using
+            pickle, would you stay on the screen longer?
+            <ol>
+              <li>
+                All users indicated that they would prefer animated demos of the
+                product on the login/signup screen, and that they would stay longer,
+                about 5 seconds more on average. They liked that they could gauge
+                how realistic the product was on the first screen they saw. Many of
+                the users agreed that convenience and simplicity are key for this
+                type of product.
+              </li>
+            </ol>
+          </li>
+          <li>
+            Would you change the wording on any of the buttons to make them more
+            intuitive?
+            <ol>
+              <li>
+                Three of the users agreed that the "Edit Training Video" button's
+                wording can be changed. Suggestions included "Train Your Pickle
+                Avatar" and "Record Training Video". The main sentiment was that the
+                word edit implied they were changing a video that already existed,
+                even though it was their first time using the product.
+              </li>
+            </ol>
+          </li>
+          <li>
+            Do you think instructions are necessary for the face scan portion? Or do
+            you feel you would be able to complete the task without them?
+            <ol>
+              <li>
+                All users said that they were familiar with the face scanning
+                process from setting up facial recognition on their phones, so a
+                simple line of text telling them to read the script was sufficient.
+                Multiple users suggested multiple stages of reading short sentences
+                that were easily memorized, to ensure they could look at the camera
+                while speaking instead of reading a single long script.
+              </li>
+            </ol>
+          </li>
+          <li>
+            Were there any points in the process where you were uncertain about how
+            to proceed?
+            <ol>
+              <li>
+                Most users said they were a bit confused after recording themselves.
+                They appreciated the training progress screen, but after it
+                disappeared and they clicked back to the home screen, there wasn't
+                much indication that the model was successfully loaded. Many of them
+                ended by questioning whether or not they had completed the required
+                task.
+              </li>
+            </ol>
+          </li>
+        </ol>
+    </div>
+
+    <div class="group">
+        <h2>If we had more time</h2>
+    <ul>
+      <li>
+        We built the prototype for the app where the configuration process is
+        done, we would add more user flows like the app when it is an overlay on
+        Zoom.
+      </li>
+      <li>
+        For this project, since the functionality was centered around the video
+        training, we decided to ignore flows for things such as the login
+        screen. Given more time, we'd like to go back and flesh those out as
+        well.
+      </li>
+    </ul>
+    </div>
+
+    <div class="group">
+        <h2>Final Thoughts</h2>
+    <p>
+      We thoroughly enjoyed this exercise of researching Pickle AI. We loved
+      being able to brainstorm ideas, so we could create an experience that was
+      both simple and enjoyable for anyone who was using this software on a
+      video call. It was interesting to see all the varying opinions when we
+      gave our product for real life people to use. We learned that creating an
+      experience isn't as straightforward as it may seem, but that people can
+      surprise you. Overall we loved the opportunity we had to create something
+      and recreate it iteratively, so we could fine tune it into something that
+      approximates to our goals.
+    </p>
+    </div>
+  </body>
+</html>

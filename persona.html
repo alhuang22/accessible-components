@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personas & Storyboarding</title>
     <!-- import CSS styles -->
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="case-study.css" />
   </head>
 
   <a href='index.html'> Home </a>
@@ -13,7 +13,7 @@
     <div class="section">
       <h1>The Vending Machine Interface</h1>
       <div class="section info-grid">
-        <div>
+        <div style="border-radius: 20px; background-color: #56afed; padding: 20px">
           <p class="info-item">Author</p>
           <p>
             Alex Huang, <br />
@@ -21,22 +21,22 @@
             Brown University
           </p>
         </div>
-        <div>
+        <div style="border-radius: 20px; background-color: #e8e672; padding: 20px">
           <p class="info-item">Project</p>
           <p>CSCI1300 <br> Personas & Storyboarding</p>
         </div>
-        <div>
+        <div style="border-radius: 20px; background-color: #f8d368; padding: 20px">
           <p class="info-item">Timeline</p>
           <p>2 weeks</p>
         </div>
-        <div>
+        <div style="border-radius: 20px; background-color: #CC99FF; padding: 20px">
           <p class="info-item">Tools Used</p>
           <p>Boords, HTML, CSS</p>
         </div>
       </div>
 
       <div class="section flex-container">
-        <div class="box">
+        <div class="box" style="border-color: #A4F4F9; border-radius: 20px; background-color: #A4F4F9; padding: 20px">
           <h2>Overview</h2>
           <p>
             Vending machines are the pinnacle of convenience. Their strategic
@@ -45,7 +45,7 @@
             users can shop, pay, and make change using its buttons.
           </p>
         </div>
-        <div class="box">
+        <div class="box" style="border-color: #FF6EC7; border-radius: 20px; background-color: #FF6EC7; padding: 20px">
           <h2>Usage</h2>
           <p>
             The specific machine that I observed first required payment, either
@@ -63,42 +63,42 @@
       </p>
     </div>
 
-    <h2>Field Work</h2>
-    <p>
-      To gain some practical insight on the interface, I decided to observe
-      users of vending machines at my university. Listed below are some key
-      observations I made.
-    </p>
-
-    <div class="container">
-      <ul>
-        <li>
-          Most users already have an idea of what they want; they briefly glance
-          at the options and confirm its location before paying and typing into
-          the keypad.
-        </li>
-        <li>
-          Users don’t pay until they know what they want, meaning they won’t
-          spend a long time browsing items after swiping their card.
-        </li>
-        <li>
-          There were practically no moments where the user took their attention
-          away from the snack machine, even when it was dispensing the item.
-        </li>
-        <li>
-          Drink machine users were more likely to look at their phone or
-          elsewhere while using the machine.
-        </li>
-        <li>Swiping the ID was a finicky process for some users.</li>
-      </ul>
-      <img
-        id="vending machine"
-        src="./assets/personas/vending.png"
-        style="height: 75%; margin-left: auto; margin-right: auto"
-      />
-    </div>
-
-    <h3>Interviewing the users</h3>
+    <div class="group">
+      <h2>Field Work</h2>
+      <p>
+        To gain some practical insight on the interface, I decided to observe
+        users of vending machines at my university. Listed below are some key
+        observations I made.
+      </p>
+  
+      <div class="container">
+        <ul>
+          <li>
+            Most users already have an idea of what they want; they briefly glance
+            at the options and confirm its location before paying and typing into
+            the keypad.
+          </li>
+          <li>
+            Users don’t pay until they know what they want, meaning they won’t
+            spend a long time browsing items after swiping their card.
+          </li>
+          <li>
+            There were practically no moments where the user took their attention
+            away from the snack machine, even when it was dispensing the item.
+          </li>
+          <li>
+            Drink machine users were more likely to look at their phone or
+            elsewhere while using the machine.
+          </li>
+          <li>Swiping the ID was a finicky process for some users.</li>
+        </ul>
+        <img
+          id="vending machine"
+          src="./assets/personas/vending.png"
+          style="height: 75%; margin-left: auto; margin-right: auto"
+        />
+      </div>
+      <h3>Interviewing the users</h3>
     <p>
       After they got their item, I asked them a few quick questions about their
       experience. I've summarized their responses to each question below, click
@@ -208,8 +208,10 @@
         content.style.display = isVisible ? "none" : "block";
       }
     </script>
+    </div>
 
-    <h2>Crafting Personas</h2>
+    <div class="group">
+      <h2>Crafting Personas</h2>
     <p>
       Using the above observations, I created two personas that drew
       characteristics from each user type that I encountered. To display the
@@ -239,10 +241,32 @@
             <li>There isn’t much indication on how to use the machine for unfamiliar users; they must learn by trial and error.</li>
         </ul></p></div>
     </div>
+    </div>
 
-    <h2>Storyboard</h2>
+    <div class="group">
+      <h2>Storyboard</h2>
     <p>I also created a storyboard that depicts Tab's process when using the vending machine. It provides a visualization on the flow of events from start to finish. The events and environment leading up to interface use are important to note as well.</p>
     <img id="storyboard" src="./assets/personas/storyboard.png" />
     <p style="text-align: center;">Images generated using AI on boords.com</p>
+    </div>
+
+    <div class="group">
+      <h2>Key Takeaways</h2>
+      <p>I had fun talking to fellow students around campus about vending machines, I learned that everyone has similar gripes with the conventional vending machine format. Here are some takeaways I had from doing this interface research:</p>
+      <ul>
+        <li>
+          Creating personas without playing into stereotypes requires a careful balance.
+        </li>
+        <li>
+          You can never please everybody with one design, people will always find something to like or dislike about a design.
+        </li>
+        <li>
+          Generating images with AI is a lifesaver as someone who can't draw for their life, but prompts need to be meticulously precise or you'll end up with some irrelevant or unrealistic "drawing"
+        </li>
+        <li>
+          There doesn't seem to be a single most-popular item in vending machines, people (at least from my small sample) always play it by their mood.
+        </li>
+      </ul>
+    </div>
   </body>
 </html>

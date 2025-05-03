@@ -1,0 +1,313 @@
+/* reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Jet Set"; /* or another techno/pixel-style font */
+  src: url("fonts/jet_set/jet-set.ttf");
+  color: #111;
+  background: #fff;
+  line-height: 1.4;
+}
+
+.page-wrapper {
+  width: 100%;
+}
+
+.video-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  overflow: hidden;
+}
+
+.video-container video {
+  min-width: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.video-container .layout {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 5rem;
+  padding: 2rem;
+  max-width: 70%;
+  min-width: 30%;
+  min-height: 40%;
+  margin: 0 auto;
+  filter: drop-shadow(4px 4px #4d760b) drop-shadow(4px -4px #4d760b)
+    drop-shadow(-4px 4px #4d760b) drop-shadow(-4px -4px #4d760b);
+}
+
+.video-container .layout-fill {
+  position: relative;
+  z-index: 2;
+  background: rgba(129, 164, 108, 0.9);
+  padding: 2rem;
+  box-sizing: border-box;
+
+  display: flex; /* keep your layout */
+  align-items: start;
+  justify-content: center;
+  gap: 5rem;
+
+  clip-path: polygon(
+    /* your original points exactly as before */ /* — top edge — */ 5% 10%,
+    20% 3%,
+    17% 12%,
+    35% 3%,
+    45% 12%,
+    55% 10%,
+    48% 5%,
+    90% 1%,
+    100% 2%,
+
+    /* — right side — */ 100% 10%,
+    95% 24%,
+    100% 30%,
+    97% 50%,
+    93% 51%,
+    100% 80%,
+    93% 95%,
+
+    /* — bottom edge — */ 65% 90%,
+    55% 95%,
+    60% 85%,
+    45% 86%,
+    40% 92%,
+    0% 100%,
+
+    /* — left side — */ 7% 75%,
+    1% 76%,
+    6% 40%,
+    0% 39%
+  );
+}
+
+.pause-text {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  padding: 10% 5%;
+  gap: 20px;
+}
+
+.hero {
+  position: relative;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.hero-stage {
+  color: #fbfd0b;
+  display: block;
+  text-shadow: 1px 1px 0 #033013, -1px 1px 0 #033013, 1px -1px 0 #033013,
+    -1px -1px 0 #033013, 0px 1px 0 #033013, 0px -1px 0 #033013,
+    -1px 0px 0 #033013, 1px 0px 0 #033013, 2px 2px 0 #033013, -2px 2px 0 #033013,
+    2px -2px 0 #033013, -2px -2px 0 #033013, 0px 2px 0 #033013,
+    0px -2px 0 #033013, -2px 0px 0 #033013, 2px 0px 0 #033013, 1px 2px 0 #033013,
+    -1px 2px 0 #033013, 1px -2px 0 #033013, -1px -2px 0 #033013,
+    2px 1px 0 #033013, -2px 1px 0 #033013, 2px -1px 0 #033013,
+    -2px -1px 0 #033013;
+}
+.hero-stage--small {
+  display: block;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+.hero-stage--large {
+  display: block;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-name {
+  font-size: 2.5rem;
+  margin-bottom: 0.3rem;
+  color: #fe8603;
+  text-shadow: 1px 1px 0 #033013, -1px 1px 0 #033013, 1px -1px 0 #033013,
+    -1px -1px 0 #033013, 0px 1px 0 #033013, 0px -1px 0 #033013,
+    -1px 0px 0 #033013, 1px 0px 0 #033013, 2px 2px 0 #033013, -2px 2px 0 #033013,
+    2px -2px 0 #033013, -2px -2px 0 #033013, 0px 2px 0 #033013,
+    0px -2px 0 #033013, -2px 0px 0 #033013, 2px 0px 0 #033013, 1px 2px 0 #033013,
+    -1px 2px 0 #033013, 1px -2px 0 #033013, -1px -2px 0 #033013,
+    2px 1px 0 #033013, -2px 1px 0 #033013, 2px -1px 0 #033013,
+    -2px -1px 0 #033013;
+}
+.hero-tagline {
+  font-size: 1.1rem;
+  color: #fbfd0b;
+  text-shadow: 1px 1px 0 #033013, -1px 1px 0 #033013, 1px -1px 0 #033013,
+    -1px -1px 0 #033013, 0px 1px 0 #033013, 0px -1px 0 #033013,
+    -1px 0px 0 #033013, 1px 0px 0 #033013, 2px 2px 0 #033013, -2px 2px 0 #033013,
+    2px -2px 0 #033013, -2px -2px 0 #033013, 0px 2px 0 #033013,
+    0px -2px 0 #033013, -2px 0px 0 #033013, 2px 0px 0 #033013, 1px 2px 0 #033013,
+    -1px 2px 0 #033013, 1px -2px 0 #033013, -1px -2px 0 #033013,
+    2px 1px 0 #033013, -2px 1px 0 #033013, 2px -1px 0 #033013,
+    -2px -1px 0 #033013;
+}
+
+.sidebar {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.sidebar a {
+  opacity: 0.7;
+  text-decoration: none;
+  color: #fbfd0b;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 0 #033013, -1px 1px 0 #033013, 1px -1px 0 #033013,
+    -1px -1px 0 #033013, 0px 1px 0 #033013, 0px -1px 0 #033013,
+    -1px 0px 0 #033013, 1px 0px 0 #033013, 2px 2px 0 #033013, -2px 2px 0 #033013,
+    2px -2px 0 #033013, -2px -2px 0 #033013, 0px 2px 0 #033013,
+    0px -2px 0 #033013, -2px 0px 0 #033013, 2px 0px 0 #033013, 1px 2px 0 #033013,
+    -1px 2px 0 #033013, 1px -2px 0 #033013, -1px -2px 0 #033013,
+    2px 1px 0 #033013, -2px 1px 0 #033013, 2px -1px 0 #033013,
+    -2px -1px 0 #033013;
+}
+
+.sidebar a:hover {
+  opacity: 1;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  padding: 2% 10%;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.icons-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.icons-label {
+  font-size: 1.1rem;
+}
+
+.icons img {
+  color: #111;
+  width: 500px;
+  height: auto;
+}
+
+.socials img {
+  max-width: 6%;
+  height: auto;
+}
+
+main {
+  padding: 2rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.case-studies-text {
+  font-size: 2.5rem;
+  margin-bottom: 0.3rem;
+  color: #fe8603;
+  text-shadow: 1px 1px 0 #033013, -1px 1px 0 #033013, 1px -1px 0 #033013,
+    -1px -1px 0 #033013, 0px 1px 0 #033013, 0px -1px 0 #033013,
+    -1px 0px 0 #033013, 1px 0px 0 #033013, 2px 2px 0 #033013, -2px 2px 0 #033013,
+    2px -2px 0 #033013, -2px -2px 0 #033013, 0px 2px 0 #033013,
+    0px -2px 0 #033013, -2px 0px 0 #033013, 2px 0px 0 #033013, 1px 2px 0 #033013,
+    -1px 2px 0 #033013, 1px -2px 0 #033013, -1px -2px 0 #033013,
+    2px 1px 0 #033013, -2px 1px 0 #033013, 2px -1px 0 #033013,
+    -2px -1px 0 #033013;
+  padding: 0rem 10px;
+}
+
+#case-studies {
+  width: 100%;
+  display: grid;
+  padding: 10px;
+  gap: 1.5rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media only screen and (max-width: 881px) {
+  #case-studies {
+    grid-template-columns: 1fr;
+  }
+}
+
+.case-study {
+  position: relative;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+#case-studies:hover .case-study {
+  opacity: 0.7;
+}
+
+/* 3) but when you hover one specific card, make it fully opaque again */
+#case-studies .case-study:hover {
+  opacity: 1;
+}
+
+.case-bg {
+  position: absolute;
+  inset: 0;
+  background: #81a46c;
+  border: 4px solid #4a780d;
+  border-radius: 20px;
+  z-index: -1;
+}
+
+.case-content {
+  display: flex;
+  align-items: flex-start;
+  padding: 1.5rem;
+}
+
+.case-content img {
+  flex-shrink: 0;
+  width: 200px;
+  height: auto;
+  margin-right: 1.5rem;
+}
+
+.case-content h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.case-content p {
+  margin: 0;
+  font-size: 1rem;
+}
